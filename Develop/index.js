@@ -7,6 +7,36 @@ const questions = [
         name: "title",
         prompt: "What is the title of your new project?"
 
+    },
+    {
+        type: "input",
+        name: "title",
+        prompt: "What is the title of your new project?"
+
+    },
+    {
+        type: "input",
+        name: "description",
+        prompt: "Type a short description about your new project."
+
+    },
+    {
+        type: "input",
+        name: "Usage",
+        prompt: "What do users need to know about your new project's repository?"
+
+    },
+    {
+        type: "input",
+        name: "contribution",
+        prompt: "What do users need to know about contributing to your new project's repository?"
+
+    },
+    {
+        type: "input",
+        name: "test",
+        prompt: "What command should be used to run a test?"
+
     }
 ];
 
