@@ -42,6 +42,11 @@ const questions = [
         type: "input",
         name: "username",
         prompt: "What is your Github username?"
+    },
+    {
+        type: "input",
+        name: "email",
+        prompt: "What is your email address?"
     }
 ];
 
