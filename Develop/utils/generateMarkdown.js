@@ -14,6 +14,30 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+          ### Description
+          ${data.description}
+
+          ### Table of Contents
+
+          ### Installation
+          Type the following commands to install:
+          \`\`\`
+          ${data.installation}
+          \`\`\`
+
+          ### Usage
+          ${data.usage}
+
+          ### Contributing
+          ${data.contributing}
+
+          ### Test
+          ${data.test}
+
+          ### Questions
+          ${data.questions}
+
+
 `;
 }
 
