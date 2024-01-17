@@ -35,8 +35,8 @@ function generateMarkdown(data) {
           ${data.test}
 
           ### Questions
-          ${data.questions}
-
+          ${data.username}
+          ${data.email}
 
 `;
 }

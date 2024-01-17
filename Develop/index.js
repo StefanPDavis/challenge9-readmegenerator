@@ -9,11 +9,6 @@ const questions = [
     },
     {
         type: "input",
-        name: "title",
-        prompt: "What is the title of your new project?"
-    },
-    {
-        type: "input",
         name: "description",
         prompt: "Type a short description about your new project."
     },
