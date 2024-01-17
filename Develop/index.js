@@ -37,6 +37,11 @@ const questions = [
         name: "license",
         prompt: "Which license would you like for your new project?",
         choices: ["Apache", "MIT", "Boost Software", "Eclipse Public", "Mozilla Public", "The Unlicense", "none"]
+    },
+    {
+        type: "input",
+        name: "username",
+        prompt: "What is your Github username?"
     }
 ];
 
