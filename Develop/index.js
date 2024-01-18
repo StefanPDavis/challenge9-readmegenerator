@@ -23,7 +23,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "Usage",
+        name: "usage",
         prompt: "What do users need to know about your new project's repository?"
     },
     {

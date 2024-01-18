@@ -29,7 +29,7 @@ a
 
 ### Usage
 
-undefined
+a
 
 
 
@@ -47,12 +47,7 @@ a
 
 ### Questions
 
-a
-undefined
+github.com/StefanPDavis
 
-Please email me if you have any questions.
-a
-
-
-
+Please email me at snoodle22@hotmail.com if you have any questions.
 
