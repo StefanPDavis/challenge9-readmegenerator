@@ -14,29 +14,61 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
-          ### Description
-          ${data.description}
+### Description
 
-          ### Table of Contents
+${data.description}
 
-          ### Installation
-          Type the following commands to install:
-          \`\`\`
-          ${data.installation}
-          \`\`\`
 
-          ### Usage
-          ${data.usage}
 
-          ### Contributing
-          ${data.contribution}
+### Table of Contents
 
-          ### Test
-          ${data.test}
+- [Installation](#installation)
 
-          ### Questions
-          ${data.username}
-          ${data.email}
+- [Usage](#usage)
+
+- [Contributing](#contributing)
+
+- [Test](#test)
+
+- [Questions](#questions)
+
+
+
+### Installation
+Type the following commands to install dependencies:
+
+${data.installation}
+
+
+
+### Usage
+
+${data.usage}
+
+
+
+### Contributing
+
+${data.contributing}
+
+
+
+### Test
+
+${data.test}
+
+
+
+### Questions
+
+${data.username}
+${data.url}
+
+Please email me if you have any questions.
+${data.email}
+
+
+
 
 `;
 }

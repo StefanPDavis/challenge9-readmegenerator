@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
-const generateMarkdown = require("generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -18,12 +18,17 @@ const questions = [
     },
     {
         type: "input",
+        name: "installation",
+        prompt: "What command should be ran in order to install dependencies?"
+    },
+    {
+        type: "input",
         name: "Usage",
         prompt: "What do users need to know about your new project's repository?"
     },
     {
         type: "input",
-        name: "contribution",
+        name: "contributing",
         prompt: "What do users need to know about contributing to your new project's repository?"
     },
     {
@@ -57,7 +62,6 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {
-        console.log("Generating README.....");
         writeToFile("README.md", generateMarkdown({...inquirerResponses}))
     })
 }
