@@ -9,48 +9,48 @@ const questions = [
     {
         type: "input",
         name: "title",
-        prompt: "What is the title of your new project?"
+        message: "What is the title of your new project?"
     },
     {
         type: "input",
         name: "description",
-        prompt: "Type a short description about your new project."
+        message: "Type a short description about your new project."
     },
     {
         type: "input",
         name: "installation",
-        prompt: "What command should be ran in order to install dependencies?"
+        message: "What command should be ran in order to install dependencies?"
     },
     {
         type: "input",
         name: "usage",
-        prompt: "What do users need to know about your new project's repository?"
+        message: "What do users need to know about your new project's repository?"
     },
     {
         type: "input",
         name: "contributing",
-        prompt: "What do users need to know about contributing to your new project's repository?"
+        message: "What do users need to know about contributing to your new project's repository?"
     },
     {
         type: "input",
         name: "test",
-        prompt: "What command should be used to run a test?"
+        message: "What command should be used to run a test?"
     },
     {
         type: "list",
         name: "license",
-        prompt: "Which license would you like for your new project?",
+        message: "Which license would you like for your new project?",
         choices: ["Apache", "MIT", "Boost Software", "Eclipse Public", "Mozilla Public", "The Unlicense", "none"]
     },
     {
         type: "input",
         name: "username",
-        prompt: "What is your Github username?"
+        message: "What is your Github username?"
     },
     {
         type: "input",
         name: "email",
-        prompt: "What is your email address?"
+        message: "What is your email address?"
     }
 ];
 
