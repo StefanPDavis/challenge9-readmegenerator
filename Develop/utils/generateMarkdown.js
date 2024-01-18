@@ -60,7 +60,7 @@ function generateMarkdown(data) {
 
   - [Usage](#usage)
 
-  - [License](#license)
+  ${renderLicenseLink(data.license)}
 
   - [Contributing](#contributing)
 
@@ -92,7 +92,7 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
 
 
-  
+
   ### Contributing
 
   ${data.contributing}

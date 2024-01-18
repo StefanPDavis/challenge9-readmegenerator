@@ -14,7 +14,7 @@
 
   - [Usage](#usage)
 
-  - [License](#license)
+  
 
   - [Contributing](#contributing)
 
@@ -46,7 +46,7 @@
   
 
 
-  
+
   ### Contributing
 
   a
