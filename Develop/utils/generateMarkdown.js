@@ -19,79 +19,99 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  
+  if (license !== "None") {
+    return (
+      `- [License](#license)`
+    )
+  }
+  return ""
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license !== "None") {
+    return (
+   `### License
+
+    Copyright @ ${license}. All rights reserved.
+
+    Licensed under the ${license} license.`
+    )
+  }
+  return ""
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ### License
-
-  ${data.license}
+  ${renderLicenseBadge(data.license)}
 
 
 
-### Table of Contents
+  ### Description
 
-- [Description](#description)
+  ${data.description}
 
-- [Installation](#installation)
+  ### Table of Contents
 
-- [Usage](#usage)
+  - [Installation](#installation)
 
-- [License](#license)
+  - [Usage](#usage)
 
-- [Contributing](#contributing)
+  - [License](#license)
 
-- [Test](#test)
+  - [Contributing](#contributing)
 
-- [Questions](#questions)
+  - [Test](#test)
 
-
-
-### Description
-
-${data.description}
+  - [Questions](#questions)
 
 
 
-### Installation
-Type the following commands to install dependencies:
+  ### Description
 
-${data.installation}
-
-
-
-### Usage
-
-${data.usage}
+  ${data.description}
 
 
 
-### Contributing
+  ### Installation
+  Type the following commands to install dependencies:
 
-${data.contributing}
-
-
-
-### Test
-
-${data.test}
+  ${data.installation}
 
 
 
-### Questions
+  ### Usage
 
-https://github.com/${data.username}
+  ${data.usage}
 
-Please email me at ${data.email} if you have any questions.
 
-`;
+
+  ${renderLicenseSection(data.license)}
+
+
+  
+  ### Contributing
+
+  ${data.contributing}
+
+
+
+  ### Test
+
+  ${data.test}
+
+
+
+  ### Questions
+
+  https://github.com/${data.username}
+
+  Please email me at ${data.email} if you have any questions.
+
+  `;
 }
 
 module.exports = generateMarkdown;
