@@ -47,7 +47,7 @@ a
 
 ### Questions
 
-github.com/StefanPDavis
+https://github.com/StefanPDavis
 
 Please email me at snoodle22@hotmail.com if you have any questions.
 

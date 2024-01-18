@@ -61,7 +61,7 @@ ${data.test}
 
 ### Questions
 
-github.com/${data.username}
+https://github.com/${data.username}
 
 Please email me at ${data.email} if you have any questions.
 
