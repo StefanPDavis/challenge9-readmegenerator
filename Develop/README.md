@@ -1,6 +1,6 @@
 # a
 
-  
+  ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
 
 
@@ -14,7 +14,7 @@
 
   - [Usage](#usage)
 
-  
+  - [License](#license)
 
   - [Contributing](#contributing)
 
@@ -43,7 +43,11 @@
 
 
 
-  
+  ### License
+
+    Copyright @ MIT. All rights reserved.
+
+    Licensed under the MIT license.
 
 
 
